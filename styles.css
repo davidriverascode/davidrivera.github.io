@@ -1,17 +1,93 @@
 :root {
     --background-dark: rgb(22, 22, 22);
+    /* --title: rgb(92, 255, 146); */
+    --title: white;
+    --title-into: white;
+    --bar: rgb(150, 255, 89);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 body {
+    display: flex;
     background-color: var(--background-dark);
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-    color: white;
+    color: var(--title);
+}
+
+.title-regular {
+  font-family: "Stalinist One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title-bold {
+  font-family: "Stalinist One", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(33,33,33); */
+    gap: .5em;
 }
 
 .name {
-
+    font-size: 3em;
+    animation: fadeIn 3s ease-out;
 }
+
+.under-bar {
+    height: .2em;
+    width: 80%;
+    background-color: var(--bar);
+    transform: scaleX(0);
+    transform-origin: center;
+    animation: expandOut 1.5s ease-out forwards;
+    animation-delay: 3s;
+}
+
+.articles-link {
+    text-decoration: none;
+    color: var(--title);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        color: var(--title-into);
+    }
+    10% {
+        opacity: 0;
+        transform: translateY(-1em);
+    }
+    50% {
+        color: var(--title-into);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes expandOut {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
