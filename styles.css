@@ -129,6 +129,10 @@ h1 {
         background-color: black;
     } */
 
+    .main-cont {
+        transform: translateY(-10vh);
+    }
+
     .name {
         font-size: 6vw;
     }
