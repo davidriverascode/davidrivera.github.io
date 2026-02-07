@@ -4,6 +4,8 @@
     --title: white;
     --title-into: white;
     --bar: rgb(150, 255, 89);
+    --bar-root: rgb(224, 250, 209);
+    /* --bar: white; */
 }
 
 * {
@@ -52,6 +54,7 @@ h1 {
     animation: fadeIn 3s ease-out;
 }
 
+
 .under-bar {
     height: .2em;
     width: 80%;
@@ -59,13 +62,29 @@ h1 {
     transform: scaleX(0);
     transform-origin: center;
     animation: expandOut 1.5s ease-out forwards;
-    animation-delay: 3s;
+    animation-delay: 1s;
+    box-shadow: 
+        0 0 5px var(--bar),
+        0 0 10px var(--bar),
+        0 0 20px var(--bar),
+        0 0 40px var(--bar);
+        /* 0 0 80px var(--bar);  */
+    /* border-radius: 50%; */
+    border-radius: .1em;
 }
 
 .articles-link {
     text-decoration: none;
     color: var(--title);
 }
+
+/* .name::hover > .articles-link {
+    color: var(--bar);
+}
+
+.articles-link::hover {
+    color: var(--bar);
+} */
 
 @keyframes fadeIn {
     0% {
