@@ -1,0 +1,11 @@
+:root {
+    --background-dark: rgb(22, 22, 22);
+}
+
+body {
+    background-color: var(--background-dark);
+}
+
+h1 {
+    color: white;
+}
