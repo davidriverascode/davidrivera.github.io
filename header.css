@@ -1,0 +1,146 @@
+:root {
+    --background-dark: rgb(22, 22, 22);
+    --darker: rgb(18, 18, 18);
+    /* --title: rgb(92, 255, 146); */
+    --title: white;
+    --title-into: white;
+    --bar: rgb(150, 255, 89);
+    /* --bar: rgb(255, 0, 179); */
+    --bar: rgb(166, 89, 255);
+    /* --bar: rgb(44, 107, 241); */
+    /* --bar: white; */
+    --bar-root: rgb(224, 250, 209);
+    /* --bar: white; */
+    --hover: rgb(124, 124, 124);
+}
+
+.glow {
+    box-shadow: 
+        0 0 5px var(--bar),
+        0 0 10px var(--bar),
+        0 0 20px var(--bar),
+        0 0 40px var(--bar);
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    width: 100vw;
+    min-height: 5vh;
+
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+}
+
+.header-cont {
+    margin-top: 2em;
+
+    width: 80vw;
+    height: 4em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--background-dark);
+
+    padding-inline: 1em;
+
+    border-radius: 1em;
+
+    animation: fadeIn 2s ease;
+
+    /* box-shadow: 0px 0px 20px 20px rgb(18, 18, 18); */
+
+    box-shadow: 
+        0 0 5px var(--bar),
+        0 0 10px var(--bar),
+        0 0 20px var(--bar),
+        0 0 40px var(--bar);
+
+    border: 2px solid var(--bar);
+}
+
+.home-abr {
+    display: none;
+}
+
+.header-link-abr {
+    display: none;
+}
+
+.header-link {
+    transition: .5s ease;
+    color: white;
+}
+
+.page-list {
+    list-style: none;
+    /* background-color: darkblue; */
+}
+
+.page {
+    display: inline;
+    margin-inline: 1em;
+}
+
+.pages-link {
+    text-decoration: none;
+    color: white;
+    transition: .5s ease;
+}
+
+.pages-link:hover {
+    color: var(--hover);
+    letter-spacing: 5px;
+}
+
+.home {
+    font-size: 1em;
+    margin-left: 2em;
+}
+
+.header-link:hover {
+    color: var(--hover);
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        display: none;
+    }
+
+    .home-abr {
+        display: flex;
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    .header-link-abr {
+        display: flex;
+        color: var(--text);
+        transition: .5s ease;
+    }
+
+    .header-link-abr:hover {
+        color: var(--bar);
+        letter-spacing: 5px;
+    }
+
+    .header-cont {
+        margin-top: 0px;
+        width: 100%;
+        /* box-shadow: none; */
+        border: none;
+        border-radius: 0px;
+        border-bottom: 2px solid var(--bar);
+        padding-inline: none;
+    }
+}
