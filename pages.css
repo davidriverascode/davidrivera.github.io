@@ -334,6 +334,39 @@ p {
     /* .name {
         font-size: 6vw;
     } */
+
+    .main-cont {
+        /* background-color: darkblue; */
+        max-width: 80vw;
+        margin-top: 15vh;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .back-cont {
+        align-self: start;
+    }
+
+    .page-head {
+        /* gap: 1em; */
+        /* background-color: darkblue; */
+    }
+
+    .page-title {
+        margin-bottom: 0em;
+    }
+
+    /* .page-link {
+    } */
+
+    .page-content {
+        /* background-color: darkgoldenrod; */
+        max-width: 80vw;
+        width: 80vw;
+        justify-self: center;
+    }
+
+
 }
 
 
