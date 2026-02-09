@@ -12,6 +12,7 @@
     --bar-root: rgb(224, 250, 209);
     /* --bar: white; */
     --hover: rgb(124, 124, 124);
+    --text: white;
 }
 
 * {
@@ -24,7 +25,7 @@ body {
     display: flex;
     background-color: var(--background-dark);
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -162,12 +163,15 @@ p {
 .main-cont {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     /* background-color: rgb(33,33,33); */
-    gap: .5em;
+    gap: 5em;
 
     margin-top: 30vh;
+    /* background-color: darkgoldenrod; */
+
+    width: 50rem;
 }
 
 .name {
@@ -199,34 +203,24 @@ p {
     color: var(--title);
 } 
 
-/* .name::hover > .articles-link {
-    color: var(--bar);
-}
-
-.articles-link::hover {
-    color: var(--bar);
-} */
 
 
 /* ARTICLES CONTAINTERS */
 
-.article-cont {
+.back-cont {
     display: flex;
-    flex-direction: column;
-    gap: 3em;
-    min-width: 50vw;
-    max-width: 70vw;
-    padding: 2em;
-    /* border: 2px solid white; */
-    animation: fadeIn 2s ease;
-    /* animation-delay: 1s; */
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
 
+.back-text {
+    color: var(--text);
     transition: .25s ease;
 }
 
-.article-cont:hover {
-    gap: 6em;
-    margin-bottom: 3em;
+.back-text:hover {
+    color: var(--bar);
 }
 
 .bar {
@@ -235,33 +229,16 @@ p {
     background-color: var(--bar);
 }
 
-.art-content {
+.page-content {
     display: flex;
     flex-direction: column;
     /* background-color: darkblue; */
-    gap: 1em;
+    /* gap: 1em; */
+
+    max-width: 70vw;
 }
 
-.art-inner-cont {
-    display: flex;
-    flex-direction: row;
-
-    max-width: 65vw;
-    max-height: 15em;
-
-    /* background-color: green; */
-
-    padding-inline: 1em;
-
-    gap: 3em;
-
-    justify-content: space-between;
-    /* align-items: center; */
-
-    /* background-color: darkblue;s */
-}
-
-.art-text-cont {
+.page-text-cont {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -269,22 +246,29 @@ p {
     /* background-color: darkblue; */
 }
 
-.article-title {
-    font-size: 2em;
+.page-head {
+    display: flex;
+    flex-direction: column;
+    /* background-color: darkblue; */
+    gap: 1em;
+}
+
+.page-title {
+    font-size: 3em;
     margin-bottom: 1em;
 }
 
-.articles-link {
+.page-link {
     color: white;
     transition: .5s ease;
 }
 
-.articles-link:hover {
+.page-link:hover {
     color: var(--bar);
     /* letter-spacing: 5px; */
 }
 
-.art-desc {
+.page-desc {
     width: 40vw;
     max-width: inherit;
     display: -webkit-box;
@@ -297,12 +281,17 @@ p {
     transition: .2s ease;
 }
 
+.page-text {
+    color: var(--text);
+    /* width: ; */
+}
+
 /* .art-desc:hover {
     letter-spacing: 2px;
 } */
 
 
-.art-pic-cont {
+.page-pic-cont {
     display: flex;
     width: 200px;
     height: 200px;
@@ -313,7 +302,7 @@ p {
     /* border: 20px solid var(--background-dark); */
 }
 
-.art-pic {
+.page-pic {
     width: 100%;
     object-fit: cover;
     border-radius: 1em;
@@ -325,7 +314,7 @@ p {
     /* filter: brightness(.7); */
 }
 
-.art-pic:hover {
+.page-pic:hover {
     /* filter: blur(2px); */
     filter: brightness(.7);
 }
@@ -334,19 +323,19 @@ p {
     transform: translateY(-1em);
 } */
 
-.art-foot-cont {
+.page-foot-cont {
     display: flex;
     /* background-color: darkslateblue; */
     justify-content: space-between;
 
-    padding-inline: 1em;
+    /* padding-inline: 1em; */
 }
 
-.art-date {
+.page-date {
     color: white;
 }
 
-.art-likes {
+.page-likes {
     display: flex;
     flex-direction: row;
     gap: 1em;
@@ -355,16 +344,16 @@ p {
     align-items: center;
 }
 
-.art-count {
+.page-count {
     color: white;
 }
 
-.art-thumb {
+.page-thumb {
     color: white;
     transition: .25s ease;
 }
 
-.art-thumb:hover {
+.page-thumb:hover {
     color: rgb(241, 44, 44);
     cursor: pointer;
     transform: scale(1.5);
