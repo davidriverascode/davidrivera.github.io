@@ -338,6 +338,11 @@ p {
         min-width: 90vw;
     }
 
+    .article-cont:hover {
+        gap: 3em;
+        margin-bottom: 0px;
+    }
+
     .art-inner-cont {
         flex-direction: column;
         max-width: 85vw;
