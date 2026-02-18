@@ -13,6 +13,7 @@
     /* --bar: white; */
     --hover: rgb(124, 124, 124);
     --text: white;
+    --list: rgb(142, 178, 255);
 }
 
 * {
@@ -36,6 +37,12 @@ h1 {
 }
 
 p {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul {
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
@@ -207,6 +214,19 @@ p {
 /* .art-desc:hover {
     letter-spacing: 2px;
 } */
+
+.page-text-list {
+    color: var(--text);
+    padding-left: 3em;
+}
+
+/* .page-text-list-elem {
+    color: var(--list);
+} */
+
+.page-text-list-elem::marker {
+    color: var(--bar);
+}
 
 
 .page-pic-cont {
