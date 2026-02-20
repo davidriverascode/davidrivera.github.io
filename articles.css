@@ -335,7 +335,7 @@ p {
     
     .article-cont {
         max-width: 99vw;
-        min-width: 90vw;
+        min-width: 80vw;
     }
 
     .article-cont:hover {
