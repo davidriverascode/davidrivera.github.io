@@ -252,10 +252,8 @@ ul {
     /* filter: brightness(.7); */
 }
 
-.page-pic:hover {
-    /* filter: blur(2px); */
-    filter: brightness(.7);
-}
+/* .page-pic:hover {
+} */
 
 /* .art-pic-cont:has(.art-pic:hover) {
     transform: translateY(-1em);
